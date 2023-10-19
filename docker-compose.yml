@@ -1,0 +1,18 @@
+name: project-images
+services:
+  app:
+    build: .
+    container_name: image-processing
+    stdin_open: true
+    tty: true
+    ipc: host
+    volumes:
+      - $PWD:/app
+    ## Comment out deploy onwards if not using GPU
+#     deploy:
+#       resources:
+#         reservations:
+#           devices:
+#             - driver: nvidia
+#               capabilities: [gpu]
+#               count: all

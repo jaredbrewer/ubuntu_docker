@@ -1,0 +1,14 @@
+numpy
+pandas
+matplotlib
+scikit-learn
+torch
+torchvision
+Pillow
+opencv-contrib-python
+albumentations
+torchinfo
+ipython
+tensorflow
+stardist
+pyimagej
